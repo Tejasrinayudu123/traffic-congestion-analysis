@@ -50,6 +50,13 @@ traffic-congestion-analysis/
 └── screenshots/
 
 ---
+## 🛠️ Technologies Used
+- Amazon S3  
+- Amazon EMR  
+- Amazon EC2  
+- Apache Spark (PySpark)  
+- SageMaker  
+- Python  
 
 ## 📊 Dataset
 
@@ -141,20 +148,19 @@ traffic-congestion-analysis/
 
 ## 🚀 How to Run
 
-### Step 1: Preprocessing
 ```bash
 spark-submit preprocessing.py
-
-### Step 2: Analysis
-```bash
 spark-submit analysis.py
-
-### Step 3: Machine Learning
-```bash
 spark-submit ml_model.py
-
+```
 
 ## 💡 Conclusion
+This project successfully demonstrates how cloud-based big data technologies can be used to analyze and model real-world traffic patterns.
 
-This project demonstrates how cloud computing and distributed data processing can be used to solve real-world traffic analysis problems.
-It highlights the effectiveness of Apache Spark and AWS services in handling large-scale datasets and generating meaningful insights.
+An end-to-end pipeline was built using AWS services, where data was stored in Amazon S3, processed using Apache Spark on EMR, and visualized using SageMaker. The system efficiently handled large-scale data and generated meaningful insights such as peak traffic hours, high-demand zones, and congestion hotspots.
+
+In the machine learning phase, Random Forest significantly outperformed Linear Regression, achieving lower error values and a higher R² score. This highlights the importance of using advanced models for capturing complex traffic patterns.
+
+Overall, this project showcases the power of scalable cloud infrastructure and distributed computing in solving real-world problems and can be extended further for real-time traffic monitoring and smart city applications.
+
+
